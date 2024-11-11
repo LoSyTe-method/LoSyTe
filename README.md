@@ -1,12 +1,4 @@
 # LoSyTe
-## [Logic Synthesis Tools Testing via Configuration Diversification with Combinatorial Multi-Armed Bandit](https://github.com/LoSyTe/LoSyTe)
-** This work has just been accepted for publication in the IEEE Transactions on Instrumentation and Measurement journal.**
-**The logic synthesis tools we tested include:**
-1. **Commercial Logic Synthesis Tool Vivado (latest version 2023.1 and 2023.2)**
-2. **Open Source Logic Synthesis Tool Yosys (latest version 0.30 + 48)**
-***
-
-# LoSyTe
 ## [Logic Synthesis Tools Testing via Configuration Diversification with Combinatorial Multi-Armed Bandit]
 
 **📢 This work has just been accepted for publication in the _IEEE Transactions on Instrumentation and Measurement_ journal.**
@@ -42,13 +34,19 @@ The complexity of circuit design continues to increase. It becomes particularly 
 ### Main File
 Our methodology is located in the 'method' directory:
 
-1.The "LoSyTe_method" directory features our proposed LoSyTe algorithm's implementation, which includes:
+The **"LoSyTe_method"** directory features our proposed LoSyTe algorithm's implementation, which includes:
 
-(1)LoSyTe.py: The main function and the first component (Configuration selection component) for dynamic parameter configuration acquisition.
-(2)get_reward.py: Evaluates each round's parameter configuration, incorporating the second (Test-program vectorization component) and third components (Equivalence checking component).
-(3)get_feature.py: Calculates feature vectors for each test program.
-(4)get_faults_number.py: Counts the number of faults discovered in the test programs generated each round.
-(5)config.toml and config_update.py: config.toml is the parameter configuration file, and config_update.py updates this file with the latest parameter configuration combinations after each round.
+1. **LoSyTe.py**: The main function and the first component (Configuration selection component) for dynamic parameter configuration acquisition.
+2. **get_reward.py**: Evaluates each round's parameter configuration, incorporating the second (Test-program vectorization component) and third components (Equivalence checking component).
+3. **get_feature.py**: Calculates feature vectors for each test program. We have constructed the following five categories of features:
+    - Data processing and operations
+    - Data flow control and representation
+    - Structuring and modularization
+    - Control flow and logic
+    - Abstraction and reuse
+4. **get_faults_number.py**: Counts the number of faults discovered in the test programs generated each round.
+5. **config.toml** and **config_update.py**: `config.toml` is the parameter configuration file, while `config_update.py` updates this file with the latest parameter configuration combinations after each round.
+
 
 2.The "Baseline" folder:
 
