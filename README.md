@@ -6,6 +6,23 @@
 2. **Open Source Logic Synthesis Tool Yosys (latest version 0.30 + 48)**
 ***
 
+# LoSyTe
+## [Logic Synthesis Tools Testing via Configuration Diversification with Combinatorial Multi-Armed Bandit]
+
+**📢 This work has just been accepted for publication in the _IEEE Transactions on Instrumentation and Measurement_ journal.**
+
+### 📄 Project Overview
+This project focuses on testing logic synthesis tools using configuration diversification and the combinatorial multi-armed bandit approach.
+
+### 🛠️ Tools Tested
+The logic synthesis tools we tested include:
+1. **Commercial Logic Synthesis Tool Vivado (latest versions 2023.1 and 2023.2)**
+2. **Open Source Logic Synthesis Tool Yosys (latest version 0.30 + 48)**
+
+---
+
+
+
 **Env dependencies:**
 1. **Vivado 2023.1 and 2023.2**
 2. **Yosys 0.30 + 48**
